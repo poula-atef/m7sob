@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">m7sob</string>
+    <string name="login">LOGIN</string>
+    <string name="login_hint">Enter Your Phone</string>
+    <string name="not_reg">This phone number is not registered!!</string>
+    <string name="logout">Logout</string>
+    <string name="order_code">Order Code..</string>
+    <string name="shop_money">Shop Money..</string>
+    <string name="client_paid">Client Paid..</string>
+    <string name="add_order">Add Order</string>
+    <string name="total_balance">Total balance</string>
+    <string name="total_profit">Total Profit</string>
+    <string name="added">Added !!</string>
+    <string name="active">Password is not correct!!</string>
+    <string name="error">Shop money can\'t be more than paid money!!</string>
+    <string name="days">Days</string>
+    <string name="back">Click again to exit</string>
+    <string name="not_internet">You have no internet connection!!</string>
+    <string name="password">Enter your password</string>
+    <string name="req">All fields are required!!</string>
+</resources>

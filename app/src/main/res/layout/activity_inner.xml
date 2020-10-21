@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".innerActivity">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Name"
+        android:textColor="#000"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btn_style"
+        android:backgroundTint="#000"
+        android:text="@string/logout"
+        android:onClick="onComponentClick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/day"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_style"
+        android:backgroundTint="#000"
+        android:onClick="onComponentClick"
+        android:text="@string/days"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logout" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn_style"
+        android:backgroundTint="#000"
+        android:onClick="onComponentClick"
+        android:text="@string/add_order"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/client_paid" />
+
+    <EditText
+        android:id="@+id/order_code"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="180dp"
+        android:inputType="numberDecimal"
+        android:background="@drawable/edit_text_style"
+        android:hint="@string/order_code"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:singleLine="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/shop_money"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edit_text_style"
+        android:hint="@string/shop_money"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:singleLine="true"
+        app:layout_constraintEnd_toEndOf="@+id/order_code"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="@+id/order_code"
+        app:layout_constraintTop_toBottomOf="@+id/order_code" />
+
+    <EditText
+        android:id="@+id/client_paid"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edit_text_style"
+        android:hint="@string/client_paid"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:singleLine="true"
+        app:layout_constraintEnd_toEndOf="@+id/shop_money"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="@+id/shop_money"
+        app:layout_constraintTop_toBottomOf="@+id/shop_money" />
+
+    <TextView
+        android:id="@+id/total_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/total_balance"
+        android:textColor="#000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/add"
+        app:layout_constraintStart_toStartOf="@+id/add"
+        app:layout_constraintTop_toBottomOf="@+id/add" />
+
+    <TextView
+        android:id="@+id/shop_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Shop Money"
+        android:textColor="#a00"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/total_day"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="@+id/total_day"
+        app:layout_constraintTop_toBottomOf="@+id/total_day" />
+
+    <TextView
+        android:id="@+id/profit_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/total_profit"
+        android:textColor="#0a0"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/shop_day"
+        app:layout_constraintStart_toStartOf="@+id/shop_day"
+        app:layout_constraintTop_toBottomOf="@+id/shop_day" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
